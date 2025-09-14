@@ -30,7 +30,7 @@ const Review = () => {
               spaceBetween: 16
             },
             1025: {
-              slidesPerView: 2.5,
+              slidesPerView: 2,
               spaceBetween: 18
             }
           },
