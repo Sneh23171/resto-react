@@ -2,13 +2,13 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import "../App.css";
 
 export default function Ourmenu() {
-  // === Refs & State (all xsm- prefixed to avoid conflicts) ===
+
   const xsmTrackRef = useRef(null);
   const xsmFirstCardRef = useRef(null);
   const [xsmIndex, setXsmIndex] = useState(0);
   const [xsmPerView, setXsmPerView] = useState(1);
 
-  // Demo data (replace with your own)
+
   const xsmItems = useMemo(
     () => [
       { title: "Black Pepper Crab", rating: "★★★★☆", desc: "Crab served with pepper in Singaporean style.", price: "$4.25" },
@@ -29,7 +29,7 @@ export default function Ourmenu() {
 
   const xsmMaxIndex = Math.max(0, xsmItems.length - xsmPerView);
 
-  // Clamp index whenever dependencies change
+
   useEffect(() => {
     setXsmIndex((i) => Math.min(Math.max(0, i), xsmMaxIndex));
   }, [xsmPerView, xsmMaxIndex]);
@@ -42,7 +42,7 @@ export default function Ourmenu() {
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  // Update transform when xsmIndex/xsmPerView changes
+
   useEffect(() => {
     if (!xsmTrackRef.current || !xsmFirstCardRef.current) return;
     const gap = 24; // must match gap in CSS (1.5rem ~ 24px)

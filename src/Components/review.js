@@ -3,15 +3,14 @@ import "../App.css";
 
 const Review = () => {
   React.useEffect(() => {
-    // Load Swiper CDN files
+  
     const loadSwiper = async () => {
-      // Load CSS
+    
       const link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
       document.head.appendChild(link);
 
-      // Load JS
       const script = document.createElement('script');
       script.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
       script.onload = () => {
@@ -21,16 +20,20 @@ const Review = () => {
           slidesPerView: 1,
           spaceBetween: 12,
           breakpoints: {
+             320: {
+              slidesPerView: 1.1,
+              spaceBetween: 14
+            },
             439: {
-              slidesPerView: 1,
+              slidesPerView: 1.5,
               spaceBetween: 14
             },
             769: {
-              slidesPerView: 2,
+              slidesPerView: 2.5,
               spaceBetween: 16
             },
             1025: {
-              slidesPerView: 2,
+              slidesPerView: 2.5,
               spaceBetween: 18
             }
           },
@@ -49,9 +52,9 @@ const Review = () => {
 
     loadSwiper();
 
-    // Cleanup function
+  
     return () => {
-      // Remove Swiper elements if needed
+    
       const existingLink = document.querySelector('link[href*="swiper"]');
       const existingScript = document.querySelector('script[src*="swiper"]');
       if (existingLink) existingLink.remove();
