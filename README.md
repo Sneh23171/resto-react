@@ -7,7 +7,7 @@ This project showcases a clean and interactive UI suitable for a restaurant or f
 
 👉 View Live on Netlify
 
-(Replace with your actual Netlify deployment link)
+Not Done Yet
 
 ✨ Features
 
