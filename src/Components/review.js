@@ -1,8 +1,9 @@
-import React from 'react';
+import { useEffect } from "react";
 import "../App.css";
 
+
 const Review = () => {
-  React.useEffect(() => {
+useEffect(() => {
   
     const loadSwiper = async () => {
     

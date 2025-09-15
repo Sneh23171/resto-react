@@ -1,4 +1,5 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+
 import "../App.css";
 
 export default function Ourmenu() {
@@ -74,7 +75,7 @@ export default function Ourmenu() {
             <button className="xsm-cat-pill">Appetizers</button>
           </div>
 
-          <a href="#" className="xsm-view-link" aria-label="View full menu">
+          <a href="/" className="xsm-view-link" aria-label="View full menu">
             View all menu
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
               <path d="m9.71 17.71 5.7-5.71-5.7-5.71-1.42 1.42 4.3 4.29-4.3 4.29z" />
