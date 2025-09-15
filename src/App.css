@@ -473,7 +473,7 @@ body {
 .xsm-card {
   position: relative;
   flex: 0 0 100%;
-  background: #fff;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
   border-radius: 40px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   padding: 130px 20px 20px;
@@ -481,7 +481,7 @@ body {
   overflow: visible;
   min-height: 360px;
   /* Add transitions for background and color */
-  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease !important;
+  transition: all 3s;
 }
 
 .xsm-card:hover {
@@ -788,6 +788,10 @@ body {
 
 .review-slider-arrow-box .swiper-button-disabled {
   opacity: 0.45;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  left: 20px !important;
 }
 
 /* 438px max breakpoint for small mobile */
@@ -1135,7 +1139,7 @@ body {
 
   .hero-heading {
     font-size: clamp(40px, 10vw, 64px);
-    margin-bottom: 25px;
+    margin: 25px 0;
   }
 
   .hero-text {
@@ -1153,8 +1157,8 @@ body {
   }
 
   .hero-circle {
-    width: clamp(250px, 60vw, 350px);
-    height: clamp(250px, 60vw, 350px);
+    width: 75vw;
+    height: 75vw;
   }
 
   .search-bar {
@@ -1343,7 +1347,7 @@ body {
   }
 
   .search-bar-btn {
-    padding: 5px 8px;
+    padding: 8px;
   }
 
   /* Order Page CSS */
@@ -1407,7 +1411,7 @@ body {
 
   .resto-footer-container {
     margin: 0px;
-    padding: 20px;
+    padding: 40px 30px;
     border-radius: 25px;
   }
 
@@ -1484,7 +1488,7 @@ body {
     gap: 10px;
   }
   .xsm-controls {
-    padding: 0 20px;
+    padding: 0 40px;
   }
   .xsm-title-main {
     font-size: 40px;
