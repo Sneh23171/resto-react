@@ -3,7 +3,7 @@ Resto Design Page
 A modern and responsive restaurant design webpage built with React.
 This project showcases a clean and interactive UI suitable for a restaurant or food service website.
 
-🚀 Live Demo
+🚀 Live Demo : https://resto-react.netlify.app/
 
 👉 View Live on Netlify
 
